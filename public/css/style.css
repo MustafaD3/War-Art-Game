@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+#selected-gun {
+  position: fixed;
+  width: 70px;
+  height: 70px;
+  pointer-events: none;
+}
+
+canvas {
+  border: 1px solid black;
+}
+
+#start-or-continue {
+  position: fixed;
+  bottom: 5px;
+  left: 5px;
+  padding: 0.6em;
+  font-size: 1.3em;
+  letter-spacing: 1px;
+  background-color: rgba(247, 175, 51, 0.943);
+  color: rgb(255, 255, 255);
+}
+
+#shop-window {
+  position: fixed;
+  background-color: rgba(247, 175, 51, 0.932);
+  width: 500px;
+  height: 800px;
+  top: 0px;
+  right: 0px;
+  transition: 0.5s;
+}
+#shop-window .icon {
+  position: fixed;
+  top: 5px;
+  right: 5px;
+  font-size: 1.6em;
+  cursor: pointer;
+}
+#shop-window .guns .gun-category {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.7em;
+}
+#shop-window .guns .gun-category .gun {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3em;
+  cursor: pointer;
+  height: 205px;
+}
+#shop-window .guns .gun-category .gun:hover span {
+  color: rgb(158, 131, 245);
+}
+#shop-window .guns .gun-category .gun img {
+  width: 100px;
+  height: 100px;
+  pointer-events: none;
+}
+#shop-window .guns .gun-category .gun span {
+  pointer-events: none;
+  font-size: 1.1em;
+  color: rgb(130, 90, 249);
+}
+
+h1 {
+  padding: 0.5em;
+  text-align: center;
+  color: white;
+}
+
+h3 {
+  padding: 0.5em;
+  text-align: center;
+  color: white;
+  border-top: 1px dashed black;
+  border-bottom: 1px dashed black;
+}
+
+h3:first-child {
+  border-top: none;
+}
+
+.close {
+  right: -800px !important;
+  transition: 0.5s;
+}/*# sourceMappingURL=style.css.map */
